@@ -8,6 +8,7 @@ export type ExhibitionEvent = {
   name: string;
   edition?: string;
   dates: { display: string; start: string; end: string };
+  image?: string;
   venue: { city: string; country: string; venueName?: string };
   industry: string;
   eventType: "Exhibition";

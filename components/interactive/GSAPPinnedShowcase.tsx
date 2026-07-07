@@ -145,7 +145,7 @@ export function GSAPPinnedShowcase() {
 
      <section ref={sectionRef} className="relative overflow-hidden bg-navy">
   {/* Background Grid */}
-  <div className="absolute inset-0 bg-grid-lines-dark opacity-30" />
+  <div className="absolute inset-0 bg-grid-lines-dark opacity-60" />
 
   <div className="relative max-w-7xl mx-auto px-6 py-20">
 
@@ -172,7 +172,7 @@ export function GSAPPinnedShowcase() {
     transition-all
     duration-700
     hover:-translate-y-3
-    hover:border-cherry/40
+    hover:border-cherry/80
     hover:shadow-[0_30px_80px_rgba(0,0,0,.45)]
   "
 >
@@ -185,12 +185,12 @@ export function GSAPPinnedShowcase() {
   sizes="(max-width:768px)100vw,(max-width:1280px)50vw,33vw"
   className="
     object-cover
-    opacity-30
+    opacity-90
     scale-100
     transition-all
     duration-700
     ease-out
-    group-hover:opacity-100
+    group-hover:opacity-200
     group-hover:scale-110
   "
 />

@@ -35,7 +35,7 @@ export default function HomePage() {
       <IndustriesGridSection />
       <GSAPPinnedShowcase />
       <GalleryPreviewSection />
-      <MomentsWallSection />
+      {/* <MomentsWallSection /> */}
       <RecognitionSection />
       <FinalCTASection />
     </>
