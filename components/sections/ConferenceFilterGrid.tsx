@@ -20,13 +20,18 @@ export function ConferenceFilterGrid() {
   );
   const [industry, setIndustry] = useState<string>(ALL);
 
-  const filtered = useMemo(
-    () =>
-      industry === ALL
-        ? CONFERENCES
-        : CONFERENCES.filter((c) => c.industry === industry),
-    [industry],
+ const filtered = useMemo(() => {
+  const data =
+    industry === ALL
+      ? CONFERENCES
+      : CONFERENCES.filter((c) => c.industry === industry);
+
+  return [...data].sort(
+    (a, b) =>
+      new Date(b.dates.start).getTime() -
+      new Date(a.dates.start).getTime()
   );
+}, [industry]);
 
   return (
     <div>
