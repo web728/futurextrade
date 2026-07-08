@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const dynamicRoutes = [
     ...SERVICES.map((s) => `/services/${s.slug}`),
-    ...EXHIBITIONS.map((e) => `/exhibitions/${e.slug}`),
+    ...EXHIBITIONS.map((e) => `/exhibitions/${e.id}`),
     ...CONFERENCES.map((c) => `/conferences/${c.slug}`),
     ...INDUSTRIES.map((i) => `/industries/${i.slug}`),
     ...MEDIA_POSTS.map((m) => `/media/${m.slug}`),

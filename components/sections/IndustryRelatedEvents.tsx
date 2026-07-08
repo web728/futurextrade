@@ -36,7 +36,7 @@ export function IndustryRelatedEvents({ industryName }: { industryName: string }
             {exhibitions.map((event) => {
               const upcoming = isEventUpcoming(event);
               return (
-                <Link key={event.slug} href={`/exhibitions/${event.slug}`} className="block h-full">
+                <Link key={event.id} href={`/exhibitions/${event.id}`} className="block h-full">
                   <HoverLiftCard className="flex h-full flex-col">
                     <Badge
                       className={cn(

@@ -38,12 +38,9 @@ export function TrustStatsSection() {
   );
 
   return (
-    <section ref={sectionRef} className="border-b border-navy/10 bg-white py-16 sm:py-20">
+    <section ref={sectionRef} className="border-b border-navy/10 bg-white py-16 sm:py-4">
       <div className="relative mx-auto max-w-7xl px-6">
-        {/* Growth connection line linking each stat — reinforces "proof, not
-            decoration". Lives in its own row above the numbers so it can
-            never cross the stat text underneath it. */}
-        <div aria-hidden className="relative mb-6 hidden h-3 md:block">
+        <div aria-hidden className="relative mb-3 hidden h-3 md:block">
           <svg
             viewBox="0 0 1000 12"
             preserveAspectRatio="none"
@@ -71,7 +68,7 @@ export function TrustStatsSection() {
           </svg>
         </div>
 
-        <div className="relative grid grid-cols-2 gap-y-10 md:grid-cols-5 md:gap-x-6 md:gap-y-0">
+        <div className="relative grid grid-cols-2 gap-y-0 md:grid-cols-5 md:gap-x-6 md:gap-y-0">
         {STATS.map((stat, i) => (
           <SectionReveal
             key={stat.label}
@@ -86,7 +83,7 @@ export function TrustStatsSection() {
             <div className="text-center">
               <AnimatedCounter
                 value={stat.value}
-                className="block text-4xl font-extrabold tracking-tight text-navy sm:text-5xl"
+                className="block text-2xl font-extrabold tracking-tight text-navy sm:text-4xl"
               />
               <p className="mt-2 text-xs font-medium uppercase tracking-wide text-navy/50 sm:text-sm">
                 {stat.label}

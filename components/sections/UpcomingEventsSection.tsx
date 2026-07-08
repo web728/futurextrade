@@ -35,7 +35,7 @@ export function UpcomingEventsSection() {
             const Icon = industry ? INDUSTRY_ICONS[industry.icon] : null;
 
             return (
-              <HoverLiftCard key={event.slug} className="flex h-full flex-col !p-0 overflow-hidden">
+              <HoverLiftCard key={event.id} className="flex h-full flex-col !p-0 overflow-hidden">
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <GalleryImage
                     src={event.heroImage ?? "/images/gallery/futurex-industry-conference-1.webp"}
@@ -78,7 +78,7 @@ export function UpcomingEventsSection() {
                   <p className="mt-3 line-clamp-2 text-sm text-navy/60">{event.description}</p>
                   <div className="mt-6 flex flex-1 items-end">
                     <Link
-                      href={`/exhibitions/${event.slug}`}
+                      href={`/exhibitions/${event.id}`}
                       className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition-colors hover:text-cherry"
                     >
                       {upcoming ? "Exhibit Now" : "View Event"}

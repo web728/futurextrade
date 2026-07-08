@@ -84,7 +84,7 @@ export default function VisitorsPage() {
 
           <AnimatedRevealGrid className="mt-14 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {upcomingEvents.map((event) => (
-              <Link key={event.slug} href={`/exhibitions/${event.slug}`} className="block h-full">
+              <Link key={event.id} href={`/exhibitions/${event.id}`} className="block h-full">
                 <HoverLiftCard className="flex h-full flex-col">
                   <h3 className="text-base font-bold text-navy">{event.name}</h3>
                   <div className="mt-3 grid gap-1.5 text-sm text-navy/60">

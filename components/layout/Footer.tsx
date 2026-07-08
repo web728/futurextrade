@@ -87,6 +87,7 @@ export function Footer() {
       src="/logos/futurex-logo.png"
     alt="Futurex Logo"
     fill
+    sizes="(max-width: 768px) 120px, 180px"
     className="object-contain object-left"
     priority
   />

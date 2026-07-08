@@ -7,7 +7,7 @@ export type NavItem = {
 };
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "/" },
+  // { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   {
     label: "Services",
@@ -50,20 +50,32 @@ export const NAV_ITEMS: NavItem[] = [
       },
     ],
   },
-  { label: "Exhibitions", href: "/exhibitions" },
-  { label: "Conferences", href: "/conferences" },
-  { label: "Industries", href: "/industries" },
+  {
+    label: "Events",
+    href: "/exhibitors",
+    children: [
+      { label: "Exhibitions", href: "/exhibitions" },
+      { label: "Conferences", href: "/conferences" },
+      { label: "Industries", href: "/industries" },
+    ],
+  },
   {
     label: "Participate",
-    href: "/exhibitors",
+    href: "#",
     children: [
       { label: "Exhibitors", href: "/exhibitors" },
       { label: "Visitors", href: "/visitors" },
       { label: "Sponsors", href: "/sponsors" },
     ],
   },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Media", href: "/media" },
+  {
+    label: "Resources",
+    href: "#",
+    children: [
+      { label: "Gallery", href: "/gallery" },
+      { label: "Media", href: "/media" },
+    ],
+  },
   { label: "Contact", href: "/contact" },
 ];
 
