@@ -51,7 +51,7 @@ export function HeroVisual() {
           alt="Exhibitors and visitors at a Futurex international exhibition"
           fill
           priority
-          sizes="(min-width: 1024px) 580px, 100vw"
+          sizes="(min-width: 1024px) 720px, 100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/85 via-navy-dark/15 to-transparent" />

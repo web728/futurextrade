@@ -154,7 +154,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="relative mx-auto aspect-square h-24 sm:h-32 md:h-40 lg:mx-0 lg:h-full lg:max-h-40 lg:justify-self-end xl:max-h-48"
+        className="relative mx-auto aspect-square h-32 sm:h-40 md:h-56 lg:mx-0 lg:h-full lg:max-h-64 xl:max-h-80"
         >
           {/* Soft ambient glow behind the panel */}
           <div
@@ -190,7 +190,7 @@ export function HeroSection() {
             <span
               key={pos}
               aria-hidden
-              className={`absolute size-2.5 rounded-[2px] border-cherry/60 ${pos}`}
+              className={`absolute size-4.5 rounded-[2px] border-cherry/60 ${pos}`}
             />
           ))}
 
