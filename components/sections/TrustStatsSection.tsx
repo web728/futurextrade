@@ -38,7 +38,7 @@ export function TrustStatsSection() {
   );
 
   return (
-    <section ref={sectionRef} className="border-b border-navy/10 bg-white py-16 sm:py-4">
+    <section ref={sectionRef} className="border-b border-navy/10 bg-white py-5 sm:py-4">
       <div className="relative mx-auto max-w-7xl px-6">
         <div aria-hidden className="relative mb-3 hidden h-3 md:block">
           <svg
@@ -68,29 +68,29 @@ export function TrustStatsSection() {
           </svg>
         </div>
 
-        <div className="relative grid grid-cols-2 gap-y-0 md:grid-cols-5 md:gap-x-6 md:gap-y-0">
-        {STATS.map((stat, i) => (
-          <SectionReveal
-            key={stat.label}
-            variant="fadeUp"
-            delay={i * 0.06}
-            className={
-              i > 0
-                ? "md:border-l md:border-navy/10 md:pl-6"
-                : undefined
-            }
-          >
-            <div className="text-center">
-              <AnimatedCounter
-                value={stat.value}
-                className="block text-2xl font-extrabold tracking-tight text-navy sm:text-4xl"
-              />
-              <p className="mt-2 text-xs font-medium uppercase tracking-wide text-navy/50 sm:text-sm">
-                {stat.label}
-              </p>
-            </div>
-          </SectionReveal>
-        ))}
+        <div className="relative grid grid-cols-3 gap-y-3 sm:grid-cols-5 sm:gap-y-0 sm:gap-x-6">
+          {STATS.map((stat, i) => (
+            <SectionReveal
+              key={stat.label}
+              variant="fadeUp"
+              delay={i * 0.06}
+              className={
+                i > 0
+                  ? "sm:border-l sm:border-navy/10 sm:pl-6"
+                  : undefined
+              }
+            >
+              <div className="text-center">
+                <AnimatedCounter
+                  value={stat.value}
+                  className="block text-lg font-extrabold tracking-tight text-navy sm:text-2xl lg:text-3xl"
+                />
+                <p className="mt-1 text-[10px] font-medium uppercase tracking-wide text-navy/50 sm:text-xs">
+                  {stat.label}
+                </p>
+              </div>
+            </SectionReveal>
+          ))}
         </div>
       </div>
     </section>

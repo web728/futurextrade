@@ -32,8 +32,8 @@ export default function HomePage() {
       <AboutPreviewSection />
       <AboutTimelineSection showHeading={false} />
       <WhatWeDoSection />
-      <IndustriesGridSection />
-      <GSAPPinnedShowcase />
+      {/* <IndustriesGridSection /> */}
+      {/* <GSAPPinnedShowcase /> */}
       <GalleryPreviewSection />
       {/* <MomentsWallSection /> */}
       <RecognitionSection />

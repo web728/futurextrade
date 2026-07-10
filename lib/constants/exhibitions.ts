@@ -43,7 +43,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhubaneswar", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-1.webp",
+    heroImage: "/images/gallery/events/mining-2026.png",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -55,7 +55,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bharatpur", country: "Nepal" },
     industry: "Agriculture",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/nepal-agritech-expo-2019.webp",
+    heroImage: "/images/gallery/events/agri.png",
     description:
       "Nepal's dedicated agri-technology exhibition connecting farm equipment, agri-input and agri-tech brands with the region's growing agricultural sector.",
   },
@@ -67,7 +67,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Kathmandu", country: "Nepal" },
     industry: "Building & Construction",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/nepal-buildcon-expo-2019.webp",
+    heroImage: "/images/gallery/events/Nepalbuildconexpo.png",
     description:
       "Nepal's leading construction and building materials exhibition, bringing manufacturers, suppliers and contractors together under one roof.",
   },
@@ -79,7 +79,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Mumbai", country: "India" },
     industry: "Printing & Packaging",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/bangladesh-3p-expo-1.webp",
+    heroImage: "/images/gallery/events/corrupack.png",
     description:
       "A specialized platform for the corrugation, packaging and printing industry, showcasing machinery, materials and packaging innovation.",
   },
@@ -91,7 +91,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Kathmandu", country: "Nepal" },
     industry: "Wood & Woodworking",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/nepal-wood-expo-2019.webp",
+    heroImage: "/images/gallery/events/nepalwood.png",
     description:
       "Nepal's premier woodworking machinery and furniture manufacturing exhibition connecting regional buyers with global suppliers.",
   },
@@ -103,7 +103,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Dhaka", country: "Bangladesh" },
     industry: "Wood & Woodworking",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/bangladesh-wood-expo-2018.webp",
+    heroImage: "/images/gallery/events/bwood.png",
     description:
       "A trade platform for woodworking machinery, furniture hardware and timber processing solutions in the Bangladesh market.",
   },
@@ -115,7 +115,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Dhaka", country: "Bangladesh" },
     industry: "Building & Construction",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/bangladesh-buildcon-expo-2019.webp",
+    heroImage: "/images/gallery/events/bangladeshb.png",
     description:
       "Bangladesh's construction and building materials exhibition connecting manufacturers, developers and contractors.",
   },
@@ -139,7 +139,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Kathmandu", country: "Nepal" },
     industry: "Agriculture",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/nepal-agritech-expo-2019.webp",
+    heroImage: "/images/gallery/events/nepalagritech.png",
     description:
       "Connecting agricultural machinery, seeds, irrigation and agri-tech brands with buyers across Nepal.",
   },
@@ -150,7 +150,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Kathmandu", country: "Nepal" },
     industry: "Food & Hospitality",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/nepal-food-beverages-expo-1.webp",
+    heroImage: "/images/gallery/events/nepalfood.png",
     description:
       "A dedicated food, beverage and hospitality trade platform showcasing products and technology for Nepal's F&B industry.",
   },
@@ -162,7 +162,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Kathmandu", country: "Nepal" },
     industry: "Building & Construction",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/nepal-buildcon-expo-2019.webp",
+    heroImage: "/images/gallery/events/nepalbuildcon.png",
     description:
       "Nepal's leading construction and building materials exhibition, bringing manufacturers, suppliers and contractors together under one roof.",
   },
@@ -174,7 +174,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Baramunda Ground, Bhubaneswar", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/mining.png",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -186,7 +186,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "The Sarit Expo Centre, Nairobi", country: "Kenya" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/kenyab.png",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -198,7 +198,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "The Sarit Expo Centre, Nairobi", country: "Kenya" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/kenyawood.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -210,7 +210,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Kampala", country: "Uganda" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/ugandabuild.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },  
@@ -222,7 +222,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepalpower--.png",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -234,7 +234,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepalconsumer.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -246,7 +246,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Chennai Trade Centre, Nandambakkam, Chennai", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/5ev.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -258,7 +258,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Chennai Trade Centre, Nandambakkam, Chennai, Tamil Nadu", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/autocompoent.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -270,7 +270,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Changlimithang Stadium Parking, Thimphu", country: "Bhutan" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/BCCII.png",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -282,7 +282,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Janata Maidan, Bhubaneswar, Odisha", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/opalst.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -294,7 +294,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Janata Maidan, Bhubaneswar, Odisha", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/propack.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -306,7 +306,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Auto Cluster Exhibition Centre, Pune", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/6thev.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -318,7 +318,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti Mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepalpack.png",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -330,7 +330,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti Mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepalpharma.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -342,7 +342,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti Mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nhsm.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -354,7 +354,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "UMA Show Grounds Lugogo, Kampala", country: "Uganda" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/uganda-buildcon.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -366,7 +366,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/ridenepal.png",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -378,7 +378,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepalev.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -390,7 +390,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepalpower.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -402,7 +402,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/consume.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -414,7 +414,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/mobile.jpg",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -426,7 +426,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Changlimithang Stadium Parking, Thimphu", country: "Bhutan" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/bhutan.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -438,7 +438,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: " ICCB, Dhaka", country: "Bangladesh" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/bangladeshwood.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -450,7 +450,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: " ICCB, Dhaka", country: "Bangladesh" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/bangladeshbuildcon.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -462,7 +462,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Auto Cluster Exhibition Centre, Chinchwad, Pune", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/3ev.png",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -474,7 +474,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Auto Cluster Exhibition Centre, Chinchwad, Pune", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/autocompoent.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -486,7 +486,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti Mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepal5p-1.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -498,7 +498,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti Mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepalpharma-1.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -510,7 +510,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform.", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/nepal-pharmatech.jpg",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -522,7 +522,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: " Bhrikuti Mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/2ND-NEPAL-5P.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -534,7 +534,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: " Bhrikuti Mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/Nepal-Wood.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -546,7 +546,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: " Bhrikuti Mandap, Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/Nepal-Buildcon.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -558,7 +558,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Chitwan EXPO Center, Bharatpur", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/NEPAL-AGRICULTURE.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -570,7 +570,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Chitwan EXPO Center, Bharatpur", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/NEPAL-FOOD.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -582,7 +582,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Chitwan EXPO Center, Bharatpur", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/chitwan.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -594,7 +594,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Chitwan EXPO Center, Bharatpur", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/indonepal.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -606,7 +606,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/indiabhutan.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -618,7 +618,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "HITEX Exhibition Center, Hyderabad", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/PHIC-LOGO.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -630,7 +630,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/3P-AFRICA-LOGO.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -642,7 +642,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/3P-EGYPT-LOGO.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -654,7 +654,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/India-Asean-Food-Beverages.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -666,19 +666,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
-    description:
-      "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
-  },
-   {
-    id: "VIRTUAL BUILDCON EXPO 2021",
-    name: "VIRTUAL BUILDCON EXPO 2021",
-    edition: "",
-    dates: { display: "24-26 March 2021", start: "2021-03-24", end: "2021-03-26" },
-    venue: { city: "Futurex Virtual Platform", country: "" },
-    industry: "Mining",
-    eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/VIRTUAL-BUILDCON.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -690,7 +678,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/Mnaufacturing-Asia-Logo.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -702,7 +690,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/MANUFACTURING-EUROPE.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -714,7 +702,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/bangladesh-printpack.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -726,7 +714,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Hitech City Hyderabad", country: "India" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/Business-Women-Expo.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -738,7 +726,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/India-Sourcing-E-Exhibition.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -750,7 +738,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/SRI-LANKA-5P.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -762,7 +750,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/Nepal5P-Virtual.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -774,7 +762,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/VIRTUAL-BUILDCON.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -786,7 +774,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/VIRTUAL-WOOD-EXPO.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -798,7 +786,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Futurex Virtual Platform", country: "" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/INFRATECH-VIRTUAL.webp",
     description:
       "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -810,7 +798,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
     venue: { city: "Bhrikuti Mandap Kathmandu", country: "Nepal" },
     industry: "Mining",
     eventType: "Exhibition",
-    heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+    heroImage: "/images/gallery/events/4PX-AFRICA.webp",
     description:
     "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -822,7 +810,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
    venue: { city: "Futurex Virtual Platform", country: "" },
    industry: "Mining",
    eventType: "Exhibition",
-   heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+   heroImage: "/images/gallery/events/MEDX-AFRICA.webp",
    description:
      "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -834,7 +822,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
    venue: { city: "Futurex Virtual Platform", country: "" },
    industry: "Mining",
    eventType: "Exhibition",
-   heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+   heroImage: "/images/gallery/events/AGRI-FOOD-AFRICA.webp",
    description:
      "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -846,7 +834,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
    venue: { city: "Futurex Virtual Platform", country: "" },
    industry: "Mining",
    eventType: "Exhibition",
-   heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+   heroImage: "/images/gallery/events/HEALTH-AND-WELLNESS.webp",
    description:
      "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -858,7 +846,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
    venue: { city: "Bhrikuti Mandap, Kathmandu", country: "Nepal" },
    industry: "Mining",
    eventType: "Exhibition",
-   heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+   heroImage: "/images/gallery/events/6th-Nepal-Buildcon-2020.jpg",
    description:
      "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },
@@ -870,7 +858,7 @@ export const EXHIBITIONS: ExhibitionEvent[] = [
    venue: { city: "Bhrikuti Mandap, Kathmandu", country: "Nepal" },
    industry: "Mining",
    eventType: "Exhibition",
-   heroImage: "/images/gallery/exhibitions/odisha-buildcon-expo-2.webp",
+   heroImage: "/images/gallery/events/Nepal-Wood-2020.jpg",
    description:
      "A focused B2B platform connecting mining and infrastructure manufacturers, technology providers and buyers across Eastern India.",
   },

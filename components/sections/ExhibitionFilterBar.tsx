@@ -103,6 +103,7 @@ export function ExhibitionFilterBar() {
     setStatus("all");
   }
 
+  
   return (
     <div>
       {/* Filter controls */}
@@ -243,6 +244,7 @@ export function ExhibitionFilterBar() {
                 animateLayout
                 className="grid-cols-1 gap-4 xs:grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5"
               >
+                
                 {events.map((event) => (
                   <ExhibitionCard key={event.id} event={event} />
                 ))}

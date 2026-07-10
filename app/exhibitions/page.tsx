@@ -3,6 +3,7 @@ import { PhotoHero } from "@/components/sections/PhotoHero";
 import { SectionReveal } from "@/components/interactive/SectionReveal";
 import { ExhibitionFilterBar } from "@/components/sections/ExhibitionFilterBar";
 import { SEO } from "@/lib/constants/seo";
+import { ExhibitionsExplorer } from "@/components/sections/exhibitions-explorer";
 
 export const metadata: Metadata = {
   title: SEO.exhibitions.title,
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function ExhibitionsPage() {
+
+  
   return (
     <>
       <PhotoHero
@@ -38,7 +41,8 @@ export default function ExhibitionsPage() {
       <section className="bg-surface py-4 pb-24">
         <div className="mx-auto max-w-7xl px-6">
           <SectionReveal>
-            <ExhibitionFilterBar />
+            {/* <ExhibitionFilterBar /> */}
+            <ExhibitionsExplorer />
           </SectionReveal>
         </div>
       </section>

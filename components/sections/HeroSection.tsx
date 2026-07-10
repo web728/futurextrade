@@ -64,13 +64,13 @@ export function HeroSection() {
         style={{ background: "radial-gradient(circle, #e32526 0%, transparent 70%)" }}
       />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-16 px-6 py-10 lg:grid-cols-[1fr_0.4fr] lg:items-center lg:py-5  ">
-        <div ref={contentRef}>
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-4 px-6 py-4 sm:gap-6 sm:py-5 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
+        <div ref={contentRef} className="lg:max-w-xl">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="glass-panel inline-flex items-center gap-2 rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-widest text-white/80"
+            className="glass-panel inline-flex items-center gap-2 rounded-full px-3 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-white/80 sm:px-4 sm:py-1 sm:text-xs"
           >
             <span className="size-1 rounded-full bg-cherry" />
             Since {COMPANY.since} · {STATS[0].value} Business Platforms
@@ -80,12 +80,13 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.06 }}
-            className="mt-3 text-sm font-semibold uppercase tracking-[0.1em] text-cherry"
+            className="mt-2 hidden items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-cherry sm:flex"
           >
+            <span className="h-px w-5 bg-cherry/60" />
             International Exhibitions · Conferences · Corporate Events
           </motion.p>
 
-          <h1 className="mt-5 text-3xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-5xl">
+          <h1 className="mt-2 text-xl font-extrabold leading-[1.08] tracking-tight text-white sm:mt-3 sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl">
             {HEADLINE_LINES.map((line, i) => (
               <span key={line} className="block overflow-hidden">
                 <motion.span
@@ -108,7 +109,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.55 }}
-            className="mt-3 max-w-xl text-sm text-white/75"
+            className="mt-2 hidden max-w-lg text-xs leading-relaxed text-white/75 sm:block sm:text-sm"
           >
             Futurex designs and delivers international exhibitions,
             conferences, corporate events and business networking platforms
@@ -119,10 +120,10 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.62 }}
-            className="mt-5 flex flex-wrap gap-4"
+            className="mt-3 flex flex-wrap items-center gap-3 sm:mt-4"
           >
             <MagneticButton>
-              <MotionCTAButton href="/exhibitions" variant="primary" size="lg">
+              <MotionCTAButton href="/exhibitions" variant="primary" size="default">
                 Explore Upcoming Events
               </MotionCTAButton>
             </MagneticButton>
@@ -130,7 +131,7 @@ export function HeroSection() {
               <MotionCTAButton
                 href="/exhibitors"
                 variant="outline"
-                size="lg"
+                size="default"
                 className="border-white text-white hover:bg-white hover:text-navy"
               >
                 Become an Exhibitor
@@ -142,10 +143,10 @@ export function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.75 }}
-            className="mt-5 max-w-xl border-t border-white/10 pt-3 text-xs text-white/40"
+            className="mt-3 hidden max-w-lg border-t border-white/10 pt-2 text-[11px] tracking-wide text-white/40 md:block"
           >
-            Trusted by exhibitors, industry bodies, business communities and growing
-            brands across multiple sectors.
+            Trusted by exhibitors, industry bodies, business communities and
+            growing brands across multiple sectors.
           </motion.p>
         </div>
 
@@ -153,33 +154,47 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="relative mx-auto aspect-square w-full max-w-md lg:mx-0 lg:justify-self-end"
+          className="relative mx-auto aspect-square h-24 sm:h-32 md:h-40 lg:mx-0 lg:h-full lg:max-h-40 lg:justify-self-end xl:max-h-48"
         >
-          {/* Soft ambient glow behind the panel, giving the visual a sense
-              of intentional depth rather than a plain empty card */}
+          {/* Soft ambient glow behind the panel */}
           <div
             aria-hidden
-            className="absolute -inset-8 -z-10 rounded-full opacity-60 blur-3xl"
+            className="absolute -inset-6 -z-10 rounded-full opacity-60 blur-2xl"
             style={{
               background:
                 "radial-gradient(circle, rgba(227,37,38,0.25) 0%, rgba(35,48,103,0.2) 45%, transparent 75%)",
             }}
           />
-          {/* A few slow-drifting light particles around the panel for depth */}
+
+          {/* A couple of light particles for depth, kept minimal at this size */}
           {!reducedMotion && (
             <>
-              <span className="animate-float-slow absolute -left-4 top-8 size-2 rounded-full bg-cherry/70 blur-[1px]" />
+              <span className="animate-float-slow absolute -left-2 top-3 size-1.5 rounded-full bg-cherry/70 blur-[1px]" />
               <span
                 style={{ animationDelay: "1s" }}
-                className="animate-float-slow absolute -right-3 top-1/3 size-1.5 rounded-full bg-white/60 blur-[1px]"
-              />
-              <span
-                className="animate-float-slow absolute bottom-6 left-1/4 size-2 rounded-full bg-cherry/50 blur-[1px]"
-                style={{ animationDelay: "2s" }}
+                className="animate-float-slow absolute -right-1.5 top-1/3 size-1 rounded-full bg-white/60 blur-[1px]"
               />
             </>
           )}
-          <div ref={sceneRef} className="absolute inset-0">
+
+          {/* Framed panel: quiet glass border plus small blueprint-style
+              corner marks, a nod to floor plans and exhibition layouts */}
+          <div className="glass-panel absolute inset-0 rounded-2xl border border-white/10" />
+
+          {[
+            "top-1.5 left-1.5 border-t-2 border-l-2",
+            "top-1.5 right-1.5 border-t-2 border-r-2",
+            "bottom-1.5 left-1.5 border-b-2 border-l-2",
+            "bottom-1.5 right-1.5 border-b-2 border-r-2",
+          ].map((pos) => (
+            <span
+              key={pos}
+              aria-hidden
+              className={`absolute size-2.5 rounded-[2px] border-cherry/60 ${pos}`}
+            />
+          ))}
+
+          <div ref={sceneRef} className="absolute inset-1.5">
             <HeroVisual />
           </div>
         </motion.div>
@@ -188,12 +203,12 @@ export function HeroSection() {
       {!reducedMotion && (
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, y: [0, 8, 0] }}
+          animate={{ opacity: 1, y: [0, 6, 0] }}
           transition={{
             opacity: { duration: 0.6, delay: 0.9 },
             y: { duration: 1.8, repeat: Infinity, ease: "easeInOut", delay: 1 },
           }}
-          className="absolute bottom-2 left-1/2 z-10 flex -translate-x-`1/2 flex-col items-center gap-1 text-white/40"
+          className="absolute bottom-1 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-0.5 text-white/40 sm:flex"
         >
           <span className="text-[8px] font-semibold uppercase tracking-widest">
             Scroll
