@@ -42,8 +42,8 @@ export function Header() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "bg-white/85 backdrop-blur-md shadow-sm py-2"
-          : "bg-white/60 backdrop-blur-sm py-4",
+          ? "bg-white/85 backdrop-blur-md shadow-sm py-4"
+          : "bg-white/60 backdrop-blur-sm py-6",
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">

@@ -47,7 +47,7 @@ export function HeroVisual() {
     >
       <div className="absolute inset-0 overflow-hidden rounded-3xl">
         <Image
-          src="/images/gallery/exhibitions/india-international-ev-show-2.webp"
+          src="/images/gallery/futurex-industry-conference-1.webp"
           alt="Exhibitors and visitors at a Futurex international exhibition"
           fill
           priority
@@ -65,7 +65,7 @@ export function HeroVisual() {
         className="absolute -bottom-6 -left-6 aspect-[4/3] w-2/5 overflow-hidden rounded-2xl border-2 border-cherry shadow-premium"
       >
         <Image
-          src="/images/gallery/exhibitions/nepal-buildcon-international-expo-2.webp"
+          src="/images/gallery/conferences/futurex-industry-conference-6.webp"
           alt="Business networking at a Futurex trade fair"
           fill
           sizes="200px"

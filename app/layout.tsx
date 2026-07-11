@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Header } from "@/components/layout/Header";
@@ -10,11 +10,22 @@ import { StickyMobileCTA } from "@/components/layout/StickyMobileCTA";
 import { PageTransition } from "@/components/interactive/PageTransition";
 import { SITE_URL } from "@/lib/constants/company";
 import "./globals.css";
+import { PremiumCursor } from "@/components/interactive/PremiumCursor";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+// 1. Premium Geometric Heading Font (Skipping 800/900 for premium refinement)
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+// 2. High-Readability Corporate Body Font
+const inter = Inter({
+  variable: "--font-body",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap",
 });
 
 const DEFAULT_TITLE =
@@ -97,8 +108,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans bg-white text-jet">
+    // 3. Added both CSS variables here, replaced 'text-jet' with 'text-navy' for premium grounding, and mapped default font-body
+    <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-body bg-white text-navy selection:bg-cherry selection:text-white">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }}
@@ -107,6 +119,7 @@ export default function RootLayout({
           <ScrollProgressBar />
           <CursorGlow />
           <Header />
+          <PremiumCursor />
           <main className="flex-1 pb-16 lg:pb-0">
             <PageTransition>{children}</PageTransition>
           </main>

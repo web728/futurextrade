@@ -342,3 +342,12 @@
     scroll-behavior: auto !important;
   }
 }
+
+@media (min-width: 1024px) {
+  /* Hide native cursor ONLY inside sections utilizing the custom version */
+  [data-cursor="vibrant"],
+  [data-cursor="vibrant"] a,
+  [data-cursor="vibrant"] button {
+    cursor: none !important;
+  }
+}

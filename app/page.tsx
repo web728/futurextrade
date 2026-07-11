@@ -28,13 +28,13 @@ export default function HomePage() {
     <>
       <HeroSection />
       <TrustStatsSection />
-      <UpcomingEventsSection />
       <AboutPreviewSection />
-      <AboutTimelineSection showHeading={false} />
       <WhatWeDoSection />
+      <UpcomingEventsSection />
+      {/* <AboutTimelineSection showHeading={false} /> */}
       {/* <IndustriesGridSection /> */}
       {/* <GSAPPinnedShowcase /> */}
-      <GalleryPreviewSection />
+      {/* <GalleryPreviewSection /> */}
       {/* <MomentsWallSection /> */}
       <RecognitionSection />
       <FinalCTASection />
