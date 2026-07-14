@@ -7,6 +7,16 @@ import { MagneticButton } from "@/components/interactive/MagneticButton";
 import { COMPANY_PROFILE_PDF } from "@/lib/constants/company";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { gsap, useGSAP } from "@/lib/gsap";
+import { ArrowDownToLine } from "lucide-react";
+
+const PARTICLES = [
+  { top: "16%", left: "8%", size: "size-1.5", tone: "bg-[var(--accent)]/70", delay: "0s" },
+  { top: "28%", right: "10%", size: "size-1", tone: "bg-white/50", delay: "0.8s" },
+  { top: "58%", left: "14%", size: "size-2", tone: "bg-[var(--accent)]/50", delay: "1.6s" },
+  { top: "45%", right: "6%", size: "size-1", tone: "bg-white/40", delay: "0.4s" },
+  { top: "78%", right: "22%", size: "size-1.5", tone: "bg-[var(--accent)]/60", delay: "2.2s" },
+  { top: "70%", left: "30%", size: "size-1", tone: "bg-white/60", delay: "1.2s" },
+] as const;
 
 export function AboutHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -16,29 +26,34 @@ export function AboutHero() {
 
   useGSAP(
     () => {
-      // 1. Premium Entrance Reveal targeting native child tags inside PhotoHero
+      // 1. Ultra-Smooth Cinematic Stagger Reveal using core target handles
       const introElements = textClusterRef.current?.querySelectorAll(".premium-reveal-target");
       if (introElements && introElements.length > 0) {
-        gsap.fromTo(
-          introElements,
-          { y: 45, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 1.4,
-            stagger: 0.12,
-            ease: "power4.out",
-            delay: 0.1,
-          }
-        );
+        if (reducedMotion) {
+          // Respect reduced motion: show immediately, no transform/opacity animation.
+          gsap.set(introElements, { y: 0, opacity: 1 });
+        } else {
+          gsap.fromTo(
+            introElements,
+            { y: 30, opacity: 0 },
+            {
+              y: 0,
+              opacity: 1,
+              duration: 1.2,
+              stagger: 0.15,
+              ease: "power4.out",
+              delay: 0.2,
+            }
+          );
+        }
       }
 
       if (reducedMotion) return;
 
-      // 2. Continuous Cinema-Grade Mouse Spotlight Tracking Loop
+      // 2. High-Performance Inertial Mouse Spotlight Loop
       const handleMouseMove = (e: MouseEvent) => {
         if (!containerRef.current || !spotlightRef.current) return;
-        
+
         const rect = containerRef.current.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
@@ -46,8 +61,8 @@ export function AboutHero() {
         gsap.to(spotlightRef.current, {
           x: x - 250,
           y: y - 250,
-          duration: 1.8,
-          ease: "power2.out",
+          duration: 1.5,
+          ease: "power3.out",
         });
       };
 
@@ -58,50 +73,70 @@ export function AboutHero() {
   );
 
   return (
-    <div ref={containerRef} className="relative overflow-hidden bg-navy w-full select-none">
-      {/* Structural Tech Blueprint Mesh Grid */}
-      <div className="absolute inset-0 bg-grid-lines-dark opacity-[0.18] pointer-events-none z-10" />
+    <div
+      ref={containerRef}
+      className="relative overflow-hidden bg-[var(--primary)] w-full select-none"
+    >
+      {/* Structural Minimalist Technical Grid Mesh */}
+      <div className="absolute inset-0 bg-grid-lines-dark opacity-[0.25] pointer-events-none z-10" />
 
-      {/* Mouse-Tracking Interactive Ambient Glow Ring */}
+      {/* Interactive Velvet Glow Spotlight tied directly to global accent token */}
       {!reducedMotion && (
         <div
           ref={spotlightRef}
           aria-hidden
-          className="absolute top-0 left-0 size-[500px] rounded-full pointer-events-none filter blur-[120px] z-10 opacity-30 mix-blend-screen will-change-transform"
+          className="absolute top-0 left-0 size-[500px] rounded-full pointer-events-none filter blur-[140px] z-10 opacity-35 mix-blend-screen will-change-transform"
           style={{
-            background: "radial-gradient(circle, rgba(227,37,38,0.4) 0%, transparent 75%)",
+            background: "radial-gradient(circle, var(--accent) 0%, transparent 70%)",
           }}
         />
       )}
 
-      {/* Tailwind targeting wraps PhotoHero to inject the animation triggers and gradients
-        without breaking your component's TypeScript definition.
-      */}
-      <div 
-        ref={textClusterRef} 
+      {/* Ambient Floating Particle Field */}
+      {!reducedMotion && (
+        <div aria-hidden className="absolute inset-0 z-10 pointer-events-none">
+          {PARTICLES.map((p, i) => (
+            <span
+              key={i}
+              className={`animate-float-slow absolute rounded-full blur-[1px] ${p.size} ${p.tone}`}
+              style={{
+                top: p.top,
+                left: "left" in p ? p.left : undefined,
+                right: "right" in p ? p.right : undefined,
+                animationDelay: p.delay,
+              }}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* Animation wrapper with clean class targeting - avoiding deep selector collision */}
+      <div
+        ref={textClusterRef}
         className="relative z-20 
-          [&_span]:premium-reveal-target [&_span]:will-change-transform
-          [&_h1]:premium-reveal-target [&_h1]:will-change-transform [&_h1]:font-heading [&_h1]:tracking-tight
-          [&_p]:premium-reveal-target [&_p]:will-change-transform [&_p]:text-white/70"
+          [&_.premium-reveal-target]:will-change-transform
+          [&_h1]:font-extrabold [&_h1]:tracking-tight
+          [&_p]:text-white/80"
       >
         <PhotoHero
           image="/images/gallery/exhibitions/indo-nepal-expo-1.webp"
           imageAlt="Futurex exhibition floor at the Indo-Nepal International Expo"
           eyebrow="About Futurex"
           title="A 15-Year Journey of Connecting Businesses & Building Markets"
+          highlightWords={["Connecting", "Businesses"]}
           subtitle="Since 2011, Futurex Trade Fair and Events Private Limited has engineered high-performing professional exhibition and convention architectures to unite industry stakeholders global networks."
         >
-          {/* Action Hub */}
-          <div className="premium-reveal-target mt-10 flex justify-center anonymity will-change-transform">
-            <MagneticButton>
+          {/* Action Hub: Upgraded Premium Styled Download Widget */}
+          <div className="premium-reveal-target mt-8 sm:mt-10 flex justify-center px-4 w-full">
+            <MagneticButton className="w-full sm:w-auto">
               <MotionCTAButton
                 href={COMPANY_PROFILE_PDF}
                 download="Futurex Group Company Profile.pdf"
                 variant="outline"
-                icon={false}
-                className="rounded-full font-semibold tracking-wide border-white/20 text-white hover:bg-white hover:text-navy transition-all duration-300 px-8 py-4 shadow-xl backdrop-blur-sm shadow-navy/20"
+                className="group relative inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full font-bold tracking-wide border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 px-8 py-4 text-sm sm:text-base bg-cherry px-6 py-3 text-white hover:bg-cherry/90 shadow-xl"
               >
-                Download Company Profile
+                <span>Download Company Profile</span>
+                {/* <ArrowDownToLine className="size-4 transition-transform duration-300 group-hover:translate-y-0.5" /> */}
               </MotionCTAButton>
             </MagneticButton>
           </div>

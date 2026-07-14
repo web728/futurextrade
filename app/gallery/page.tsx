@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { PhotoHero } from "@/components/sections/PhotoHero";
 import { GalleryGrid } from "@/components/sections/GalleryGrid";
+import { GALLERY_ITEMS } from "@/lib/constants/gallery";
+import { GalleryHero } from "@/components/sections/GalleryHero";
 
 export const metadata: Metadata = {
   title: "Gallery | Futurex Exhibitions, Conferences & Corporate Events",
@@ -11,12 +12,13 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   return (
     <>
-      <PhotoHero
-        image="/images/gallery/srilanka-buildcon-expo-2019.webp"
-        imageAlt="Exhibition floor at a Futurex international expo"
+      <GalleryHero
         eyebrow="Gallery"
         title="The Energy of Business in Motion"
         subtitle="Explore moments from Futurex exhibitions, conferences and event platforms where industries meet, ideas move and opportunities begin."
+        // A handful of real gallery images double as the hero's floating
+        // parallax tiles — no separate hero-only asset needed.
+        previewItems={GALLERY_ITEMS.slice(0, 6).map((item) => ({ src: item.src, alt: item.alt }))}
       />
 
       {/* Grid */}

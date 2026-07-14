@@ -7,6 +7,9 @@ import { gsap } from "@/lib/gsap";
 export function PremiumCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
   const reducedMotion = useReducedMotion();
+  
+  // Track hover state to prevent loop override clashes
+  const isHovered = useRef(false);
 
   useEffect(() => {
     if (reducedMotion || typeof window === "undefined") return;
@@ -23,7 +26,10 @@ export function PremiumCursor() {
 
     const setX = gsap.quickTo(cursor, "x", { duration: 0.2, ease: "power3.out" });
     const setY = gsap.quickTo(cursor, "y", { duration: 0.2, ease: "power3.out" });
-    const setRotation = gsap.quickTo(cursor, "rotate", { duration: 0.15, ease: "power2.out" });
+    
+    // FIX 1: Changed "rotate" to "rotation" to eliminate the rapid console warnings
+    const setRotation = gsap.quickTo(cursor, "rotation", { duration: 0.15, ease: "power2.out" });
+    
     const setScaleX = gsap.quickTo(cursor, "scaleX", { duration: 0.15, ease: "power2.out" });
     const setScaleY = gsap.quickTo(cursor, "scaleY", { duration: 0.15, ease: "power2.out" });
 
@@ -44,41 +50,69 @@ export function PremiumCursor() {
       pos.x += dx * 0.25;
       pos.y += dy * 0.25;
 
-      // Map raw distance to acceleration magnitude
-      const velocity = Math.min(Math.sqrt(dx * dx + dy * dy), 150);
-      
-      // Calculate dynamic stretch scalar factors ($scale \ge 1.0$)
-      const stretch = 1 + velocity * 0.004;
-      const squeeze = 1 - velocity * 0.002;
-
-      // Compute precise motion rotation angle (in degrees)
-      const angle = Math.atan2(dy, dx) * (180 / Math.PI);
-
-      // Deploy accelerated transformation variables
+      // Deploy accelerated positional transformation variables
       setX(pos.x);
       setY(pos.y);
-      setRotation(angle);
-      setScaleX(stretch);
-      setScaleY(squeeze);
+
+      // Only calculate and apply stretch/rotation if not hovering an element
+      // This prevents the loop from overriding your clean scale hover effect
+      if (!isHovered.current) {
+        const velocity = Math.min(Math.sqrt(dx * dx + dy * dy), 150);
+        
+        // Calculate dynamic stretch scalar factors
+        const stretch = 1 + velocity * 0.004;
+        const squeeze = 1 - velocity * 0.002;
+
+        // Compute precise motion rotation angle (in degrees)
+        const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+
+        setRotation(angle);
+        setScaleX(stretch);
+        setScaleY(squeeze);
+      }
     };
 
     gsap.ticker.add(updateCursorLoop);
 
     // Global Hover Classes tracking listeners
-    const handleMouseOver = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      // Triggers scale modifications when interacting with links or buttons
-      if (target.closest("a") || target.closest("button") || target.classList.contains("clickable")) {
-        gsap.to(cursor, { scale: 2.2, backgroundColor: "rgba(227,37,38,0.12)", borderColor: "#e32526", duration: 0.25 });
-      }
-    };
+  const handleMouseOver = (e: MouseEvent) => {
+  const target = e.target as HTMLElement;
+  if (target.closest("a") || target.closest("button") || target.classList.contains("clickable")) {
+    isHovered.current = true;
 
-    const handleMouseOut = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (target.closest("a") || target.closest("button") || target.classList.contains("clickable")) {
-        gsap.to(cursor, { scale: 1, backgroundColor: "transparent", borderColor: "rgba(227, 37, 38, 0.75)", duration: 0.25 });
-      }
-    };
+    // Use the SAME quickTo setters the ticker uses for these props,
+    // instead of a separate gsap.to() — this stops the transform
+    // cache index from being invalidated every frame.
+    setScaleX(2.2);
+    setScaleY(2.2);
+    setRotation(0); // Reset tilt on hover for readability
+
+    // Colors aren't transform props, so tween them separately.
+    gsap.to(cursor, {
+      backgroundColor: "rgba(227,37,38,0.12)",
+      borderColor: "#e32526",
+      duration: 0.25,
+      overwrite: "auto",
+    });
+  }
+};
+
+const handleMouseOut = (e: MouseEvent) => {
+  const target = e.target as HTMLElement;
+  if (target.closest("a") || target.closest("button") || target.classList.contains("clickable")) {
+    isHovered.current = false;
+
+    setScaleX(1);
+    setScaleY(1);
+
+    gsap.to(cursor, {
+      backgroundColor: "transparent",
+      borderColor: "rgba(227, 37, 38, 0.75)",
+      duration: 0.25,
+      overwrite: "auto",
+    });
+  }
+};
 
     window.addEventListener("mouseover", handleMouseOver);
     window.addEventListener("mouseout", handleMouseOut);
